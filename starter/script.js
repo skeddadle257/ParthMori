@@ -15,7 +15,10 @@ function processRegistration(event) {
   //console.log(username);
 
   localStorage.setItem("RegisteredUsers", username + ":" + password + ";");
+
+  alert('Registration successful for ' + username);
 }
+
 
 function processLogin(event) {
   event.preventDefault();
